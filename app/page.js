@@ -1,4 +1,6 @@
 import Hero from "./components/Hero";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Project2 from "./components/Project2";
@@ -14,6 +16,12 @@ export default function Home() {
     <div className=" relative container  mx-auto ">
       <div className="  py-12  pb-28  relative space-y-16  ">
         <Hero />
+        <ToastContainer
+          position="top-center"
+          autoClose={500000}
+          hideProgressBar
+          newestOnTop
+        />
       </div>
       <About />
       <Gy />

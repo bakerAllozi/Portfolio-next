@@ -19,6 +19,12 @@ const certificates = [
     title: "Certificate 3",
     file: "/photo_2024-11-18_14-28-56.jpg",
   },
+  {
+    title: "Future Bachelor's Degree in Computer Engineering",
+    file: "/placeholder-future-certificate.jpg", // Replace with an actual placeholder image
+    description:
+      "Expected Graduation: Bachelor's in Computer Engineering from Tafila Technical University (2020 - 2025/12/30)",
+  },
 ];
 
 const page = () => {
@@ -48,6 +54,9 @@ const page = () => {
                 />
               )}
             </div>
+            {cert.description && (
+              <p className="text-gray-600 mt-2 text-sm">{cert.description}</p>
+            )}
           </div>
         ))}
       </div>
