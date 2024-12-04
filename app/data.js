@@ -474,9 +474,39 @@ export const DataCard = [
     ],
   },
   {
-    img: Img13,
+    img: Img14,
     Demo: "https://github.com/bakerAllozi/e-commerce-react-full-Stack-Final-version.git",
     Code: "https://github.com/bakerAllozi/e-commerce-react-full-Stack-Final-version.git",
+    type: "React_level_3",
+    icons: [
+      <RIcon
+        iconColor="#ff0000"
+        delayIcon={4}
+        icon={<FaGithub />}
+        icon1={false}
+        key={4}
+      />,
+
+      <RIcon
+        key={1}
+        iconColor="#0000ff"
+        delayIcon={1}
+        icon={<FaCss3Alt />}
+        icon1={false}
+      />,
+      <RIcon
+        key={2}
+        iconColor="#0000ff"
+        delayIcon={2}
+        icon={<FaReact />}
+        icon1={false}
+      />,
+    ],
+  },
+  {
+    img: Img14,
+    Demo: "https://github.com/bakerAllozi/e-commerce-next.js-nextAuth-Auth.js.git",
+    Code: "https://github.com/bakerAllozi/e-commerce-next.js-nextAuth-Auth.js.git",
     type: "React_level_3",
     icons: [
       <RIcon

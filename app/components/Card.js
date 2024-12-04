@@ -65,6 +65,7 @@ const Card = () => {
               Staying ready to implement modern technologies like GraphQL and
               Micro Frontends upon demand
             </li>
+            <li>Learning Jira for effective team management</li>
           </ul>
         </motion.div>
 

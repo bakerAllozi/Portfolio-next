@@ -44,7 +44,7 @@ export default function Footer() {
               <span>LinkedIn</span>
             </a>
           </Link>
-          <Link href="https://github.com/YOUR_USERNAME" legacyBehavior>
+          <Link href="https://github.com/bakerAllozi" legacyBehavior>
             <a
               className="bg-gray-700 text-white px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-gray-800 transition duration-300"
               target="_blank"
