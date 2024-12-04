@@ -59,13 +59,32 @@ const Card = () => {
           <ul className="list-disc list-inside">
             <li>Diving deeper into TypeScript for scalable applications</li>
             <li>Mastering testing frameworks like Jest</li>
-            <li>Learning backend development with Node.js and Nest.js</li>
+            <li>
+              Mastering backend development with Node.js and Nest.js, focusing
+              on:
+              <ul className="list-inside list-decimal ml-6 mt-2">
+                <li>
+                  Advanced architectures like Microservices and Clean
+                  Architecture
+                </li>
+                <li>Real-time technologies such as WebSockets</li>
+                <li>Integrating databases like MySQL and MongoDB</li>
+                <li>Caching mechanisms with Redis</li>
+                <li>API design and best practices</li>
+                <li>
+                  Implementing robust authentication and authorization systems
+                </li>
+              </ul>
+            </li>
             <li>Exploring advanced security tools for secure projects</li>
             <li>
               Staying ready to implement modern technologies like GraphQL and
               Micro Frontends upon demand
             </li>
-            <li>Learning Jira for effective team management</li>
+            <li>
+              Acquiring proficiency in Jira to streamline team collaboration and
+              project management
+            </li>
           </ul>
         </motion.div>
 
