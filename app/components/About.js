@@ -18,6 +18,7 @@ import { TbBrandFramerMotion } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import Card from "@/app/components/Card";
 import RIcon from "@/app/components/RIcon";
+import { BiLogoTypescript } from "react-icons/bi";
 
 function page() {
   return (
@@ -34,6 +35,11 @@ function page() {
             <RIcon iconColor="#ffff00" delayIcon={3} icon={<FaJs />} />
             <RIcon iconColor="#0000ff" delayIcon={4} icon={<FaReact />} />
             <RIcon iconColor="#800080" delayIcon={5} icon={<TbBrandRedux />} />
+            <RIcon
+              iconColor="#0000ff"
+              delayIcon={5}
+              icon={<BiLogoTypescript />}
+            />
             <RIcon
               iconColor="#ff69b4"
               delayIcon={6}

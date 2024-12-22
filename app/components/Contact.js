@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col items-center space-y-6">
         <h2 className="text-2xl font-bold text-white">Contact Me</h2>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link href="https://wa.me/YOUR_NUMBER" legacyBehavior>
+          <Link href="https://wa.me/+962 7 7003 3028" legacyBehavior>
             <a
               className="bg-green-500 text-white px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-green-600 transition duration-300"
               target="_blank"
@@ -24,7 +24,7 @@ export default function Footer() {
               <span>WhatsApp</span>
             </a>
           </Link>
-          <Link href="mailto:your-email@example.com" legacyBehavior>
+          <Link href="bakerdes654@gmail.com" legacyBehavior>
             <a
               className="bg-red-500 text-white px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-red-600 transition duration-300"
               target="_blank"
@@ -34,7 +34,10 @@ export default function Footer() {
               <span>Email</span>
             </a>
           </Link>
-          <Link href="https://www.linkedin.com/in/YOUR_PROFILE" legacyBehavior>
+          <Link
+            href="https://www.linkedin.com/in/baker-obid-112575332"
+            legacyBehavior
+          >
             <a
               className="bg-blue-700 text-white px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-blue-800 transition duration-300"
               target="_blank"
@@ -56,11 +59,11 @@ export default function Footer() {
           </Link>
           <div className="bg-gray-800 text-white px-4 py-2 rounded-full flex items-center space-x-2">
             <FaWhatsapp size={24} />
-            <span>Your Phone Number</span>
+            <span>+962 7 7003 3028</span>
           </div>
         </div>
         <p className="text-sm text-gray-500">
-          © {new Date().getFullYear()} Your Name. All Rights Reserved.
+          © {new Date().getFullYear()} baker Allozi All Rights Reserved.
         </p>
       </div>
     </footer>

@@ -9,7 +9,7 @@ const TypingText = ({ text }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setKey((prevKey) => prevKey + 1);
-    }, text.length * 100 + 1000); // مدة الأنيميشن + وقت الانتظار قبل الإعادة
+    }, text.length * 100 + 1000);
 
     return () => clearInterval(interval);
   }, [text]);

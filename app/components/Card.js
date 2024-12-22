@@ -57,11 +57,8 @@ const Card = () => {
         >
           <h3 className="font-bold mb-2">My Next Learning Steps:</h3>
           <ul className="list-disc list-inside">
-            <li>Diving deeper into TypeScript for scalable applications</li>
-            <li>Mastering testing frameworks like Jest</li>
             <li>
-              Mastering backend development with Node.js and Nest.js, focusing
-              on:
+              Mastering backend development with Node.js , focusing on:
               <ul className="list-inside list-decimal ml-6 mt-2">
                 <li>
                   Advanced architectures like Microservices and Clean
