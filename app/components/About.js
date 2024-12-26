@@ -25,7 +25,7 @@ function page() {
     <div className=" min-h-[100vh]  relative  mb-56 ">
       <div className="  container mx-auto z-40 py-10">
         <div className=" mb-56  4 ">
-          <h1 className="font-bold text-[#cbacf9] text-[30px] text-center mb-5  mt-20     sm:mt-10 border-b-2 border-dotted border-[#cbacf9]    ">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-center mb-8 mt-16 sm:mt-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 border-b-4 border-dotted border-purple-500 pb-4 shadow-md">
             Professional Skill
           </h1>
 

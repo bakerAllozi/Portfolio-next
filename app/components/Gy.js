@@ -172,56 +172,58 @@ export default function Gy() {
   );
 
   return (
-    <div>
-      <h1 className="font-bold text-[#cbacf9] text-[30px] text-center mb-5  mt-20  sm:mt-10 border-b-2 border-dotted border-[#cbacf9]    ">
+    <div className="min-h-screen bg-gradient-to-r from-purple-800 via-indigo-900 to-gray-900 py-20 px-6">
+      <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-indigo-500 text-center mb-10 mt-16 sm:mt-10  border-purple-500 pb-4">
         My Project Management Experience
       </h1>
-      <div className="relative w-full gap-2 grid grid-cols-12 grid-rows-2 px-8    pt-28   ">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8 py-12 bg-gradient-to-b from-gray-800 via-gray-900 to-black">
         <RCard
           text1="Project Setup"
           text2="How to Successfully Set Up Your Project"
           img="https://nextui.org/images/card-example-4.jpeg"
-          style="col-span-12 sm:col-span-4"
-          onClick={handleCardClick}
-        >
-          {contents}
-        </RCard>
-        <RCard
-          text1="Task Distribution"
-          text2="How to Distribute Tasks to the Team"
-          img="https://nextui.org/images/card-example-3.jpeg"
-          style="col-span-12 sm:col-span-4"
-          onClick={handleCardClick}
-        >
-          {contents}
-        </RCard>
-        <RCard
-          text1="Progress Monitoring"
-          text2="Monitoring Project Progress"
-          img="https://nextui.org/images/card-example-2.jpeg"
-          style="col-span-12 sm:col-span-4    "
+          style="w-full h-[350px]"
           onClick={handleCardClick}
         >
           {contents}
         </RCard>
 
-        {overlayVisible && (
-          <div className="fixed inset-0 overflow-x-hidden bg-black text-black bg-opacity-75 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out">
-            <div className=" p-8 rounded-lg shadow-lg w-[100vw] overflow-x-hidden h-full overflow-y-scroll mx-auto animate-slide-in">
-              {overlayContent}
-              <Button
-                auto
-                flat
-                color="error"
-                onClick={closeOverlay}
-                className="mt-4  absolute right-1 top-0  text-white text-[20px] hover:text-[30px]"
-              >
-                X
-              </Button>
-            </div>
-          </div>
-        )}
+        <RCard
+          text1="Task Distribution"
+          text2="How to Distribute Tasks to the Team"
+          img="https://nextui.org/images/card-example-3.jpeg"
+          style="w-full h-[350px]"
+          onClick={handleCardClick}
+        >
+          {contents}
+        </RCard>
+
+        <RCard
+          text1="Progress Monitoring"
+          text2="Monitoring Project Progress"
+          img="https://nextui.org/images/card-example-2.jpeg"
+          style="w-full h-[350px]"
+          onClick={handleCardClick}
+        >
+          {contents}
+        </RCard>
       </div>
+      {overlayVisible && (
+        <div className="fixed inset-0 overflow-x-hidden bg-black text-black bg-opacity-75 flex items-center justify-center z-50 transition-opacity duration-300 ease-in-out">
+          <div className=" p-8 rounded-lg shadow-lg w-[100vw] overflow-x-hidden h-full overflow-y-scroll mx-auto animate-slide-in">
+            {overlayContent}
+            <Button
+              auto
+              flat
+              color="error"
+              onClick={closeOverlay}
+              className="mt-4  absolute right-1 top-0  text-white text-[20px] hover:text-[30px]"
+            >
+              X
+            </Button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -229,20 +231,31 @@ export default function Gy() {
 const RCard = ({ text1, text2, img, style, onClick, children }) => {
   return (
     <div
-      className={`${style} h-[300px] cursor-pointer `}
+      className={`${style} h-[350px] relative transform transition-transform hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/50 cursor-pointer rounded-xl overflow-hidden`}
       onClick={() => onClick(children)}
     >
-      <Card className={`${style} h-[300px] `}>
-        <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">{text1}</p>
-          <h4 className="text-white font-medium text-large">{text2}</h4>
+      <Card className="h-full bg-gradient-to-br from-purple-700 via-indigo-800 to-black rounded-xl shadow-lg group relative">
+        {/* محتوى العنوان */}
+        <CardHeader className="absolute z-10 top-4 left-4 flex flex-col items-start opacity-90 group-hover:opacity-100 transition-opacity duration-300">
+          <p className="text-sm text-purple-200 uppercase font-bold tracking-wider">
+            {text1}
+          </p>
+          <h4 className="text-white font-semibold text-lg mt-2">{text2}</h4>
         </CardHeader>
+
+        {/* الصورة الخلفية */}
         <Image
           removeWrapper
           alt="Card background"
-          className="z-0 w-full h-full object-cover"
           src={img}
+          className="z-0 w-full h-full object-cover transition-all duration-300 group-hover:scale-110"
         />
+
+        {/* تظليل على الخلفية */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black opacity-60 group-hover:opacity-80 transition-opacity duration-300"></div>
+
+        {/* تأثير الإطار عند المرور */}
+        <div className="absolute inset-0 border-2 border-purple-500 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
       </Card>
     </div>
   );

@@ -3,15 +3,11 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="flex justify-center items-center mt-7   ">
-      <div className="   w-fit  rounded-lg  max-w-2xl h-16 bg-[#24173866] border-[2px] border-[#24173866] sm:rounded-full flex gap-5 justify-center items-center mb-6 px-4">
+    <div className="flex justify-center items-center mt-7">
+      <div className="w-fit rounded-lg max-w-2xl h-16 bg-gradient-to-r from-purple-700 via-purple-900 to-black shadow-lg sm:rounded-full flex gap-8 justify-center items-center mb-6 px-6 border-[2px] border-purple-800">
         <ReusableNav text="Home" Url="/" />
-        <ReusableNav text="Projects" />
-        <ReusableNav text="certificate" />
-        <ReusableNav
-          text="Resume"
-          Url="https://taqdpudyhenvaibczyar.supabase.co/storage/v1/object/public/forme/Blue%20and%20Gray%20Simple%20Professional%20CV%20Resume%20(1).pdf"
-        />
+        <ReusableNav text="Projects" Url="/Projects" />
+        <ReusableNav text="Certificate" Url="/certificate" />
       </div>
     </div>
   );
@@ -20,11 +16,13 @@ function Navbar() {
 const ReusableNav = ({ text, Url }) => {
   return (
     <Link
-      href={Url || text}
+      href={Url || "/"}
       className="group/item relative cursor-pointer flex flex-col items-center"
     >
-      <p className="text-white text-[10px] font-bold sm:text-lg ">{text}</p>
-      <p className="invisible bg-white rounded-full w-[7px] h-[7px] absolute bottom-[-6px] left-[50%] transform -translate-x-1/2 group-hover/item:visible transition-all duration-300"></p>
+      <p className="text-white text-[10px] font-bold sm:text-lg group-hover/item:text-purple-400 transition-all duration-300">
+        {text}
+      </p>
+      <p className="invisible bg-gradient-to-r from-purple-400 to-pink-500 rounded-full w-[7px] h-[7px] absolute bottom-[-6px] left-[50%] transform -translate-x-1/2 group-hover/item:visible transition-all duration-300"></p>
     </Link>
   );
 };

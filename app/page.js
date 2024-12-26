@@ -13,23 +13,29 @@ import { PiArrowBendUpRightBold } from "react-icons/pi";
 
 export default function Home() {
   return (
-    <div className=" relative container  mx-auto ">
-      <div className="  py-12  pb-28  relative space-y-16  ">
+    <div className="relative container mx-auto">
+      <a
+        href="/Blue and Gray Simple Professional CV Resume (2).pdf"
+        download
+        className="fixed top-4 z-50 right-4 bg-[#241738] text-white px-4 py-2 rounded-full shadow-lg text-[10px] sm:text-lg font-bold hover:bg-[#ff0000] hover:text-white transition duration-300 cursor-pointer"
+      >
+        Download My CV
+      </a>
+
+      <div className="py-12 pb-28 relative space-y-16">
         <Hero />
+
         <ToastContainer
           position="top-center"
-          autoClose={500000}
+          autoClose={5000}
           hideProgressBar
           newestOnTop
         />
       </div>
+
       <About />
       <Gy />
-      <PiArrowBendUpRightBold />
-      {/* <Project2 /> */}
-      <footer>
-        <Contact />
-      </footer>
+      <Contact />
     </div>
   );
 }

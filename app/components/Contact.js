@@ -1,22 +1,18 @@
-// components/Footer.js
 import Link from "next/link";
-import {
-  FaWhatsapp,
-  FaFacebookMessenger,
-  FaEnvelope,
-  FaLinkedin,
-  FaGithub,
-} from "react-icons/fa";
+import { FaWhatsapp, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 py-8">
-      <div className="container mx-auto flex flex-col items-center space-y-6">
-        <h2 className="text-2xl font-bold text-white">Contact Me</h2>
-        <div className="flex flex-wrap justify-center gap-4">
-          <Link href="https://wa.me/+962 7 7003 3028" legacyBehavior>
+    <footer className="bg-gradient-to-br from-gray-800 via-gray-900 to-black text-gray-300 py-12  mt-10">
+      <div className="container mx-auto flex flex-col items-center space-y-8">
+        {/* العنوان الرئيسي */}
+        <h2 className="text-3xl font-bold text-white">Get In Touch</h2>
+
+        {/* أيقونات التواصل */}
+        <div className="flex flex-wrap justify-center gap-6">
+          <Link href="https://wa.me/+962770033028" legacyBehavior>
             <a
-              className="bg-green-500 text-white px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-green-600 transition duration-300"
+              className="bg-green-500 text-white px-5 py-3 rounded-full flex items-center space-x-3 hover:bg-green-600 transition-all duration-300 shadow-lg"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -24,9 +20,10 @@ export default function Footer() {
               <span>WhatsApp</span>
             </a>
           </Link>
-          <Link href="bakerdes654@gmail.com" legacyBehavior>
+
+          <Link href="mailto:bakerdes654@gmail.com" legacyBehavior>
             <a
-              className="bg-red-500 text-white px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-red-600 transition duration-300"
+              className="bg-red-500 text-white px-5 py-3 rounded-full flex items-center space-x-3 hover:bg-red-600 transition-all duration-300 shadow-lg"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -34,12 +31,13 @@ export default function Footer() {
               <span>Email</span>
             </a>
           </Link>
+
           <Link
             href="https://www.linkedin.com/in/baker-obid-112575332"
             legacyBehavior
           >
             <a
-              className="bg-blue-700 text-white px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-blue-800 transition duration-300"
+              className="bg-blue-600 text-white px-5 py-3 rounded-full flex items-center space-x-3 hover:bg-blue-700 transition-all duration-300 shadow-lg"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -47,9 +45,10 @@ export default function Footer() {
               <span>LinkedIn</span>
             </a>
           </Link>
+
           <Link href="https://github.com/bakerAllozi" legacyBehavior>
             <a
-              className="bg-gray-700 text-white px-4 py-2 rounded-full flex items-center space-x-2 hover:bg-gray-800 transition duration-300"
+              className="bg-gray-700 text-white px-5 py-3 rounded-full flex items-center space-x-3 hover:bg-gray-800 transition-all duration-300 shadow-lg"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -57,13 +56,17 @@ export default function Footer() {
               <span>GitHub</span>
             </a>
           </Link>
-          <div className="bg-gray-800 text-white px-4 py-2 rounded-full flex items-center space-x-2">
-            <FaWhatsapp size={24} />
-            <span>+962 7 7003 3028</span>
-          </div>
         </div>
+
+        {/* رقم الهاتف */}
+        <div className="bg-gray-700 text-white px-5 py-3 rounded-full flex items-center space-x-3 shadow-md">
+          <FaWhatsapp size={24} />
+          <span>+962 7 7003 3028</span>
+        </div>
+
+        {/* الحقوق محفوظة */}
         <p className="text-sm text-gray-500">
-          © {new Date().getFullYear()} baker Allozi All Rights Reserved.
+          © {new Date().getFullYear()} Baker Allozi. All Rights Reserved.
         </p>
       </div>
     </footer>
