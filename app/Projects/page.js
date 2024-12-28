@@ -11,7 +11,7 @@ const Page = ({ searchParams }) => {
         My Recent Works
       </h1>
       <a
-        href="/Blue and Gray Simple Professional CV Resume (2).pdf"
+        href="/Blue and Gray Simple Professional CV Resume (2) (1).pdf "
         download
         className="fixed top-4 z-50 right-4 bg-[#241738] text-white px-4 py-2 rounded-full shadow-lg text-[10px] sm:text-lg font-bold hover:bg-[#ff0000] hover:text-white transition duration-300 cursor-pointer"
       >
