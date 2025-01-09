@@ -8,7 +8,7 @@ const Page = ({ searchParams }) => {
   return (
     <div className="py-7   min-h-[100vh] ">
       <h1 className=" text-[35px] mb-5 text-center  text-[#7d5692]  font-bold  ">
-        My Recent Works
+        My Works
       </h1>
       <a
         href="/Blue and Gray Simple Professional CV Resume (2) (1).pdf "
