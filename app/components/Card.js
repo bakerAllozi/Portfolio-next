@@ -11,7 +11,6 @@ const Card = () => {
   return (
     <div className="text-white min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-800 via-indigo-900 to-gray-900 py-16 px-6">
       <div className="text-center p-8 bg-opacity-70 bg-black rounded-lg shadow-lg">
-        {/* العنوان الرئيسي */}
         <motion.h1
           className="text-4xl md:text-6xl font-extrabold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-pink-500"
           initial={{ opacity: 0, y: -50 }}
@@ -22,7 +21,6 @@ const Card = () => {
           Know Who I Am
         </motion.h1>
 
-        {/* الفقرة التعريفية */}
         <motion.p
           className="text-lg md:text-2xl mb-6 leading-relaxed text-gray-300"
           initial={{ opacity: 0, y: 50 }}
@@ -37,7 +35,6 @@ const Card = () => {
           dedicated web developer in 2022.
         </motion.p>
 
-        {/* التفاصيل الإضافية */}
         <motion.p
           className="text-md md:text-xl mb-6 leading-relaxed text-gray-400"
           initial={{ opacity: 0, y: 50 }}

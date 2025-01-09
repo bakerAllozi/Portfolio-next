@@ -3,7 +3,7 @@ import Gf from "./Gf";
 import { Spinner } from "@nextui-org/react";
 
 const Page = ({ searchParams }) => {
-  const filter = searchParams?.ProjectType ?? "React_level_2";
+  const filter = searchParams?.ProjectType ?? "React_level_3";
 
   return (
     <div className="py-7   min-h-[100vh] ">

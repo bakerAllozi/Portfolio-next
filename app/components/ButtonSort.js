@@ -37,7 +37,7 @@ const RButton = ({ Text, color, setSortBy }) => {
   const searchParams = useSearchParams();
   const router = useRouter();
   const pathname = usePathname();
-  const activeFilter = searchParams.get("ProjectType") ?? "React_level_2";
+  const activeFilter = searchParams.get("ProjectType") ?? "React_level_3";
   function handleFilter(filter) {
     const params = new URLSearchParams(searchParams);
     params.set("ProjectType", filter);

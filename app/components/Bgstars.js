@@ -23,7 +23,7 @@ const BgStars = () => {
   }));
 
   return (
-    <div className=" absolute w-full h-[450vh]   overflow-hidden ">
+    <div className=" absolute w-full h-[200vh]   overflow-hidden ">
       {stars.map((star, index) => (
         <Star key={index} x={star.x} y={star.y} delay={star.delay} />
       ))}
