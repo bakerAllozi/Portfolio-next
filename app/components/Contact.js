@@ -5,10 +5,8 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-gray-800 via-gray-900 to-black text-gray-300 py-12  mt-10">
       <div className="container mx-auto flex flex-col items-center space-y-8">
-        {/* العنوان الرئيسي */}
         <h2 className="text-3xl font-bold text-white">Get In Touch</h2>
 
-        {/* أيقونات التواصل */}
         <div className="flex flex-wrap justify-center gap-6">
           <Link href="https://wa.me/+962770033028" legacyBehavior>
             <a
