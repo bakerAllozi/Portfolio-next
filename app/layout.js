@@ -7,7 +7,7 @@ import Container from "./components/Container";
 
 export const metadata = {
   title: "baker allozi",
-  description: "front end ",
+  description: "front end   ",
 };
 
 export default function RootLayout({ children }) {

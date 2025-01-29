@@ -475,8 +475,8 @@ export const DataCard = [
   },
   {
     img: Img14,
-    Demo: "https://github.com/bakerAllozi/e-commerce-react-full-Stack-Final-version.git",
-    Code: "https://github.com/bakerAllozi/e-commerce-react-full-Stack-Final-version.git",
+    Demo: "https://sellersapp.netlify.app/",
+    Code: "https://github.com/bakerAllozi/Online-store-Seller-platform-react",
     type: "React_level_3",
     icons: [
       <RIcon
@@ -505,8 +505,8 @@ export const DataCard = [
   },
   {
     img: Img14,
-    Demo: "https://github.com/bakerAllozi/e-commerce-next.js-nextAuth-Auth.js.git",
-    Code: "https://github.com/bakerAllozi/e-commerce-next.js-nextAuth-Auth.js.git",
+    Demo: "https://github.com/bakerAllozi/E-commerce-For-buyer-next.js-nextAuth-Auth.js",
+    Code: "https://github.com/bakerAllozi/E-commerce-For-buyer-next.js-nextAuth-Auth.js",
     type: "React_level_3",
     icons: [
       <RIcon

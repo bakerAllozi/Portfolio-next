@@ -6,7 +6,7 @@ const Page = ({ searchParams }) => {
   const filter = searchParams?.ProjectType ?? "React_level_3";
 
   return (
-    <div className="py-7   min-h-[100vh] ">
+    <div className="py-7 min-h-[100vh] ">
       <h1 className=" text-[35px] mb-5 text-center  text-[#7d5692]  font-bold  ">
         My Works
       </h1>
